@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 250%;
+            margin: 2%;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: black;
+        }
+
+        .box-1,
+        .box-2,
+        .box-3,
+        .box-4,
+        .box-5,
+        .box-6,
+        .box-7,
+        .box-8,
+        .box-9,
+        .box-10,
+        .box-11,
+        .box-12 {
+            height: 150px;
+            width: 150px;
+            background-color: gold;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Hover Effects */
+        .box-1:hover {
+            transform: translateX(20px);
+            transition: 0.1s;
+        }
+
+        .box-2:hover {
+            transform: translateY(20px);
+            transition: 0.1s;
+        }
+
+        .box-3:hover {
+            transform: translate(20px, 20px);
+            transition: 0.1s;
+        }
+
+        .box-4:hover {
+            transform: skewX(20deg);
+            transition: 0.1s;
+        }
+
+        .box-5:hover {
+            transform: skewY(20deg);
+            transition: 0.1s;
+        }
+
+        .box-6:hover {
+            transform: skew(20deg, 20deg);
+            transition: 0.1s;
+        }
+
+        .box-7:hover {
+            transform: scaleX(1.1);
+            transition: 0.1s;
+        }
+
+        .box-8:hover {
+            transform: scaleY(1.1);
+            transition: 0.1s;
+        }
+
+        .box-9:hover {
+            transform: scale(1.1);
+            transition: 0.1s;
+        }
+
+        .box-10:hover {
+            transform: rotateX(20deg);
+            transition: 0.1s;
+        }
+
+        .box-11:hover {
+            transform: rotateY(20deg);
+            transition: 0.1s;
+        }
+
+        .box-12:hover {
+            transform: rotate(20deg);
+            transition: 0.1s;
+        }
+
+        .row1 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 2.5%;
+        }
+
+        .border {
+            cursor: pointer;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 200%;
+            }
+
+            .row1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 80%;
+                height: 50px;
+                margin-bottom: 100px;
+            }
+
+            .box-1,
+            .box-2,
+            .box-3,
+            .box-4,
+            .box-5,
+            .box-6,
+            .box-7,
+            .box-8,
+            .box-9,
+            .box-10,
+            .box-11,
+            .box-12 {
+                width: 100%;
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 180%;
+            }
+
+            .box {
+                width: 80%;
+            }
+
+            .box-1,
+            .box-2,
+            .box-3,
+            .box-4,
+            .box-5,
+            .box-6,
+            .box-7,
+            .box-8,
+            .box-9,
+            .box-10,
+            .box-11,
+            .box-12 {
+                font-size: medium;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transform Game</h1>
+    <div class="row1">
+        <div class="box">
+            <div class="box-1 border">TranslateX(20px)</div>
+        </div>
+        <div class="box">
+            <div class="box-2 border">TranslateY(20px)</div>
+        </div>
+        <div class="box">
+            <div class="box-3 border">Translate(20px, 20px)</div>
+        </div>
+    </div>
+
+    <div class="row1">
+        <div class="box">
+            <div class="box-4 border">SkewX(20deg)</div>
+        </div>
+        <div class="box">
+            <div class="box-5 border">SlewY(20deg)</div>
+        </div>
+        <div class="box">
+            <div class="box-6 border">Skew(20deg, 20deg)</div>
+        </div>
+    </div>
+
+    <div class="row1">
+        <div class="box">
+            <div class="box-7 border">ScaleX(1.1)</div>
+        </div>
+        <div class="box">
+            <div class="box-8 border">ScaleY(1.1)</div>
+        </div>
+        <div class="box">
+            <div class="box-9 border">Scale(1.1)</div>
+        </div>
+    </div>
+
+    <div class="row1">
+        <div class="box">
+            <div class="box-10 border">RotateX(20deg)</div>
+        </div>
+        <div class="box">
+            <div class="box-11 border">RotateY(20deg)</div>
+        </div>
+        <div class="box">
+            <div class="box-12 border">Rotate(20deg)</div>
+        </div>
+    </div>
+</body>
+
+</html>
