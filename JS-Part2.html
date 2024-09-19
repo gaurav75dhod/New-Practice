@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript Part-2</h1>
+    <script>
+        // Loops
+        // For loop
+        console.log("for loop")
+        for (let i = 1; i <= 10; i++) {
+            console.log(`The number is: ${i}`)
+        }
+        // While loop
+        console.log("while loop")
+        let j = 0;
+        while (j <= 10) {
+            console.log(j);
+            j++;
+        }
+        // for-in loop - to print the value of the object
+        console.log("for-in loop")
+        let obj = {
+            student1: "A",
+            student2: "B"
+        }
+        for (const key in obj) {
+            const element = obj[key];
+            console.log(element);
+        }
+        // for-of loop - to print the values of an array
+        console.log("for-of loop")
+        let arr = [10, 20, 30, 40, 50];
+        for (const element of arr) {
+            console.log(element)
+        }
+
+        // Functions
+        console.log("functions")
+        function sum(a, b) {
+            console.log(`Sum of two numbers: ${a + b}`)
+        }
+        sum(5, 5);
+
+        // Multiplication function of two numbers
+        // let x = prompt("Enter first number");
+        // let y = prompt("Enter second number");
+        // function multiplication(x , y){
+        //     console.log(`Solution is ${x * y}`)
+        // }
+        // multiplication(x,y)
+
+        // Characters functions to find how many characters are there in the word
+        // let word = prompt("Enter any word");
+        // let count = 0;
+        // function characters(){
+        //     for (let index = 0; index < word.length; index++) {
+        //         count++
+        //     }
+        //     console.log(`Characters of the given word are ${count}`)
+        // }
+        // characters(word);
+
+        // Vowel function to find how many vowels are there in the word
+        // let word1 = prompt("Enter any word");
+        // let count1 = 0;
+        // function vowel(){
+        //     for (let index = 0; index < word1.length; index++) {
+        //         if (word1[index] =="a" || word1[index]=="e" || word1[index] =="i" || word1[index] == "o" || word1[index] =="u" || word1[index] =="A" || word1[index]=="E" || word1[index] =="I" || word1[index] == "O" || word1[index] =="U") {
+        //             count1++
+        //         }
+        //     }
+        //     console.log(`Vowels in given word are ${count1}`)
+        // }
+        // vowel(word1)
+
+        // Strings
+        console.log("Strings")
+        let str = "Hello";
+        console.log(str[0])
+        console.log(str[1])
+        console.log(str[2])
+        console.log(str[3])
+        console.log(str[4])
+        console.log(`Length of string is ${str.length}`)
+        console.log(str.toLowerCase())
+        console.log(str.toUpperCase())
+        console.log(str.replace("H", "h"));
+        console.log(str.endsWith("l"))
+        console.log(str)
+        console.log(str.slice(0, 2))
+
+        // Arrays
+        console.log("arrays")
+        let arr1 = [100, 110, 120, 130, 140, 150];
+        console.log(arr1);
+        console.log(`Length of an array is ${arr1.length}`)
+        console.log(arr1.push(160));
+        console.log(arr1)
+        console.log(arr1.pop());
+        console.log(arr1)
+        console.log(arr1.unshift(90));
+        console.log(arr1)
+        console.log(arr1.shift());
+        console.log(arr1)
+        let arr2 = [160, 170];
+        console.log(arr1.concat(arr2));
+        console.log(arr1);
+        console.log(arr2);
+    </script>
+</body>
+
+</html>
